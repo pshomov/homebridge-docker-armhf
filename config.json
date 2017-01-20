@@ -1,0 +1,24 @@
+{
+"bridge": {
+        "name": "Homebridge",
+        "username": "CA:21:3D:E3:CE:30",
+        "port": 51826,
+        "pin": "031-45-154"
+    },
+"platforms": [
+        {
+            "platform":"MiLight",
+            "name":"MiLight",
+            "bridges": [
+              {
+                "ip_address": "10.0.1.25",
+                "version": "v2",
+                "lights": {
+                           "rgbw": ["Living Room"]},
+                "repeat": 1,
+                "delay": 100
+              }
+            ]
+        }
+]
+}
