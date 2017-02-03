@@ -9,5 +9,5 @@ $ docker build -t homebridge .
 
 ## Running the container
 ```
-$ docker rm -f homebridge ; docker run --name homebridge -d --net=host -p 51826:51826 -p 5353:5353 homebridge
+$ docker rm -f homebridge ; docker run --name homebridge -d --restart=unless-stopped --net=host -p 51826:51826 -p 5353:5353 homebridge
 ```
