@@ -1,6 +1,6 @@
-from hypriot/rpi-node:6.9.4
+from arm32v7/node:8.12.0-jessie
 RUN apt-get update && apt-get install -y libavahi-compat-libdnssd-dev
-RUN npm i -g  --unsafe-perm homebridge@0.4.38
+RUN npm i -g  --unsafe-perm homebridge@0.4.45
 RUN npm i -g homebridge-milight@1.1.4
 COPY config.json /root/.homebridge/config.json
 COPY run.sh /root/
